@@ -1,0 +1,90 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.rsonline.uk</groupId>
+    <artifactId>parent</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>RSOnline</name>
+    <description>Sample Test project</description>
+    <url>http://maven.apache.org</url>
+
+    <modules>
+        <module>functional</module>
+    </modules>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.1.RELEASE</version>
+    </parent>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <serenity.version>2.0.30</serenity.version>
+        <serenity.maven.version>1.0.47</serenity.maven.version>
+        <serenity.cucumber.version>1.9.22</serenity.cucumber.version>
+		<javax.inject.version>1</javax.inject.version>
+		<httpcomponents.httpclient.version>4.5.6</httpcomponents.httpclient.version>
+		<httpcomponents.httpcore.version>4.4.10</httpcomponents.httpcore.version>
+		<logback.version>1.2.3</logback.version>
+		<logback.encoder.version>5.2</logback.encoder.version>
+		<slf4j.version>1.7.25</slf4j.version>
+		<assertj.version>3.11.1</assertj.version>
+		<cucumber.version>1.2.5</cucumber.version>
+        <fakeer.version>0.16</fakeer.version>
+        <webdriver.ie.driver>src//test//resources//IEDriverServer.exe</webdriver.ie.driver>
+        <java.version>1.8</java.version>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>maven-repository</id>
+            <url>https://mvnrepository.com/</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </pluginRepository>
+        <pluginRepository>
+            <id>osssonatype</id>
+            <name>OSS Sonatype</name>
+            <url>https://repo1.maven.org/maven2/</url>
+            <layout>default</layout>
+        </pluginRepository>
+        <pluginRepository>
+            <id>serenity</id>
+            <name>bintray-plugins</name>
+            <url>http://dl.bintray.com/serenity/maven</url>
+        </pluginRepository>
+        <pluginRepository>
+            <id>repo.bodar.com</id>
+            <name>cucumber</name>
+            <url>http://repo.bodar.com/</url>
+        </pluginRepository>
+    </pluginRepositories>
+    <repositories>
+        <repository>
+            <id>osssonatype</id>
+            <name>OSS Sonatype</name>
+            <url>https://repo1.maven.org/maven2/</url>
+            <layout>default</layout>
+        </repository>
+        <repository>
+            <id>serenity</id>
+            <name>bintray</name>
+            <url>http://dl.bintray.com/serenity/maven</url>
+        </repository>
+        <repository>
+            <id>repo.bodar.com</id>
+            <name>cucumber</name>
+            <url>http://repo.bodar.com/</url>
+        </repository>
+    </repositories>
+</project>
